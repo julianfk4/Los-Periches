@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     body {
         margin: 0;
         padding: 0;
-        background-image: url("./images/hola.png");
+        background-image: url("./images/adios.png");
     }
 
     .circle {
@@ -40,12 +40,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </style>
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100">
-    <div class="card text-center p-4" style="width: 28rem; background-color: #3a3a3a; border-radius: 15px;">
+    <div class="card text-center p-4" style="width: 28rem; background-color: #180A0A; border-radius: 15px;">
         <div class="card-body">
             <div class="circle mx-auto mb-3"></div>
             <h3 class="text-light">DIRECTORIO DE<br>PARTITURAS</h3>
             <form action="" method="POST" class="d-flex justify-content-center align-items-center ">
-                <div class="card text-center p-4" style="width: 17rem; background-color: #535353; border-radius: 15px;">
+                <div class="card text-center p-4" style="width: 17rem; background-color: #371D1D; border-radius: 15px;">
                     <div class="mb-3 text-start">
                         <label for="usuario" class="form-label text-light">Usuario</label>
                         <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" required>
