@@ -28,9 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     body {
         margin: 0;
         padding: 0;
-        background-image: url("./images/adios.png");
+        background-image: url("./images/gpt.png");
+        background-repeat: no-repeat ;
+        background-size: cover;
     }
-
     .circle {
         width: 150px;
         height: 150px;
@@ -40,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </style>
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100">
-    <div class="card text-center p-4" style="width: 28rem; background-color: #180A0A; border-radius: 15px;">
+    <div class="card text-center p-4" style="width: 28rem; background-color:rgba(24, 10, 10, 0);">
         <div class="card-body">
             <div class="circle mx-auto mb-3"></div>
             <h3 class="text-light">DIRECTORIO DE<br>PARTITURAS</h3>
