@@ -8,7 +8,13 @@ if ($_SESSION['role'] !== "admin") {
 $current_directory = 'uploads/';
 $folders = array_diff(scandir($current_directory), array('.', '..'));
 ?>
+<?php if (isset($_GET['error'])): ?>
+    <div class="alert alert-danger"><?= htmlspecialchars($_GET['error']) ?></div>
+<?php endif; ?>
 
+<?php if (isset($_GET['success'])): ?>
+    <div class="alert alert-success"><?= htmlspecialchars($_GET['success']) ?></div>
+<?php endif; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -226,8 +232,8 @@ $folders = array_diff(scandir($current_directory), array('.', '..'));
             dropzone.classList.remove('dragover');
             fileInput.files = e.dataTransfer.files;
         });
-
-        // Upload progress simulation
+        
+        // En este tramo subiremos archivos para que se sumen as
         document.getElementById('uploadForm').addEventListener('submit', (e) => {
             e.preventDefault();
             const progressBar = document.querySelector('.progress-bar');
